@@ -17,7 +17,7 @@ This is a fork of Enaon's great work. Generally I will do customizations for mys
 
 [**Web loader**](https://ysfsvm.github.io/eucWatch/dk08) for the DK08 watch
 
-#### Espruino Installation [how-to] - Espruino Images - Useful Files(https://ysfsvm.github.io/eucWatch/p8_hack-files/)
+#### Espruino Installation [how-to] - Espruino Images - Useful Files [here](https://ysfsvm.github.io/eucWatch/p8_hack-files/)
 
 [Espruino](https://www.espruino.com/) and sdk12 upgrade image by @fanoush. 
 
