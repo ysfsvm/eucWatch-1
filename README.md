@@ -1,4 +1,8 @@
 
+
+### eucWatch:
+This is a fork of Enaon's great work. Generally I will do customizations for myself. I'll also share the Espruino builds here. Maybe you can find something useful.
+
 >**Notice**:
 >There are two problems one might face when buying a P8 watch to use with this git. 
 >1. The antenna of the p8 might not be good enouph for a solid connection. It will work, but only 3 out of 10 that I got my hand on were good enough to not need an antenna change. That requires opening up the watch, and if done carefully it barelly leaves any visible marks.
@@ -7,21 +11,21 @@
 
 ### Loader version:
 
-[**Web loader**](https://enaon.github.io/eucWatch/p8)  for the P8 watch
+[**Web loader**](https://ysfsvm.github.io/eucWatch/p8)  for the P8 watch
+[**Testing Web loader**](https://ysfsvm.github.io/eucWatch/p8-dev)  for the P8 watch
+[**Dev Web loader**](https://ysfsvm.github.io/eucWatch/p8-testing)  for the P8 watch
 
-[**Web loader**](https://enaon.github.io/eucWatch/dk08) for the DK08 watch
+[**Web loader**](https://ysfsvm.github.io/eucWatch/dk08) for the DK08 watch
 
+#### Espruino Installation [how-to] - Espruino Images - Useful Files(https://ysfsvm.github.io/eucWatch/p8_hack-files/)
 
-### Manual install:
-
-Files for P8 watch are [here](https://github.com/enaon/eucWatch/tree/main/P8).  Can be used with the [flash enabled](https://github.com/fanoush/ds-d6/blob/master/espruino/DFU/P8/espruino_2v07.60_p8_SDK11_SD20_SPIFLASH.zip) or the  the [not flash enabled](https://github.com/fanoush/ds-d6/blob/master/espruino/DFU/P8/espruino_2v07.60_p8_SDK11_SD20.zip) [Espruino](https://www.espruino.com/) image build by @fanoush. 
+[Espruino](https://www.espruino.com/) and sdk12 upgrade image by @fanoush. 
 
 **Enter this in left hand side (webide) to enable flash(one time only) before uploading.** 
 (the loader version will do this automatically when an install option from the installer tab is selected)
 
 var spi=new SPI();spi.setup({sck:D2,mosi:D3,miso:D4,mode:0}); spi.send([0xab],D5);  //wake
 
-#### Espruino Installation [how-to](https://enaon.github.io/eucWatch/P8/hackme/)
 
 ### Credits
 
@@ -47,4 +51,3 @@ var spi=new SPI();spi.setup({sck:D2,mosi:D3,miso:D4,mode:0}); spi.send([0xab],D5
 
   
 </details>
-
