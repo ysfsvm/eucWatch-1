@@ -18,6 +18,7 @@ face[0] = {
     },
     init: function() {
         var g = w.gfx;
+        g.clear();
         if (set.def.hid != 1) {
             g.setColor(0, col("black"));
             //g.clearRect(1,0,239,239);
@@ -30,6 +31,7 @@ face[0] = {
             g.drawString("TO ENABLE", 60, 200);
             g.flip();
         } else {
+        
             //header
 	    //todo:add music info from gb
             g.setColor(0, col("dgray1")); //header_back
