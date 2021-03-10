@@ -67,7 +67,7 @@ face[0] = { //the first face of the hello app, called by using `face.go("hello",
   },
   startdraw: function(init) {
     if (init===undefined) init=false;
-    //if(!init) this.g.clear();
+    if(!init) this.g.clear();
     if(!init) this.intervalRef = setInterval(function(t){t.next();},65,this);
   },
   regen: function(){
