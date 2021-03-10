@@ -11,7 +11,7 @@ face[0] = { //the first face of the hello app, called by using `face.go("hello",
   currentY:1,
   intervalRef:null,
   myflip: function() {
-    this.g.drawImage({width:160,height:160,bpp:1,buffer:this.buf.buffer},40,40);
+   this.g.drawImage({width:160,height:160,bpp:1,buffer:this.buf.buffer},40,40);
    	//this.g.drawString((this.gentime|0)+'ms  ',200,220,true);
    	//this.gentime=0;
     this.g.flip();
@@ -79,6 +79,7 @@ face[0] = { //the first face of the hello app, called by using `face.go("hello",
     this.intervalRef = setInterval(function(t){t.next();},65,this);
   },
   init: function(o) { //put here the elements of the page that will not need refreshing and initializations.
+    this.g.clear();
     this.buf=Graphics.createArrayBuffer(160,160,1,{msb:true});
     this.genA=new Uint8Array(324);
     this.genB=new Uint8Array(324);
@@ -158,5 +159,3 @@ touchHandler[0]=function(e,x,y){
     this.timeout();
   }
 };
-
-
